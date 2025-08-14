@@ -1,4 +1,4 @@
-import logo from '../assets/globe.png';
+import logo from '../images/globe.png';
 
 function Header() {
     return (
