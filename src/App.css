@@ -1,0 +1,22 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  background-color: white;
+}
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:  #F55A5A;
+  color: white;
+  height: 55px;
+}
+.nav > img{
+  width:24px;
+  margin-right: 7px;
+}
+.nav > h1{
+  font-size: 0.9rem;
+  font-weight:1000;
+  font-family:Inter;
+}
