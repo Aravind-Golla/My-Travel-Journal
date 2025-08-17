@@ -1,40 +1,88 @@
-body{
+body {
   margin: 0px;
   padding: 0px;
   background-color: white;
+  font-family: Inter, Arial, sans-serif;
 }
-.nav{
+
+/* ---- Header ---- */
+.nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color:  #F55A5A;
+  background-color: #F55A5A;
   color: white;
   height: 55px;
 }
-.nav > img{
-  width:24px;
+
+.nav > img {
+  width: 24px;
   margin-right: 7px;
 }
-.nav > h1{
-  font-size: 0.9rem;
-  font-weight:1000;
-  font-family:Inter;
-}
-article.journal-entry{
-  display:flex;
-  margin-top: 20px;
 
+.nav > h1 {
+  font-size: 0.9rem;
+  font-weight: 900;
+  font-family: Inter, Arial, sans-serif;
+  margin: 0;
 }
-.first-img-container{
-width:125px;
-height: 168px;
-overflow: hidden;
-border-radius: 5px;
-display-shrink: 0;
-margin-right: 19px;
+
+/* ---- Entry ---- */
+article.journal-entry {
+  display: flex;
+  margin: 20px;
+  gap: 15px;
 }
-.first-img-container>img{
-width: 100%;
-height: 100%;
-object-fit: cover;
+
+.first-img-container {
+  width: 125px;
+  height: 168px;
+  overflow: hidden;
+  border-radius: 5px;
+  flex-shrink: 0;
+}
+
+.first-img-container > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ---- Entry Details ---- */
+.entry--details {
+  display: flex;
+  flex-direction: column;
+}
+
+.entry--title {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.entry--location {
+  margin: 4px 0;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.entry--location .country {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.entry--location a {
+  color: #F55A5A;
+  text-decoration: none;
+}
+
+.entry--location a:hover {
+  text-decoration: underline;
+}
+
+.entry--text {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  line-height: 1.4;
 }
